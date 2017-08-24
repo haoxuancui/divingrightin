@@ -5,14 +5,14 @@ public class divingrightin
 
 	public static void main(String[] args) 
 	{
-		//userName();
+		userName();
 		userAge();
-		//yearofBirth();
+	    yearofBirth();
 		
 	}
 	
 	
-	//private static void userName()
+	private static void userName()
 		{
 			Scanner userinput = new Scanner(System.in);
 			System.out.println("What is your name?");
@@ -25,10 +25,15 @@ public class divingrightin
 			Scanner input1 = new Scanner(System.in);
 			System.out.println("Can you also tell me you year of birth?");
 			int yearofbirth = input1.nextInt();
-			int i = yearofbirth;
+			for(int i = yearofbirth; i<2018; i++)
+				{
+					int temp = i-yearofbirth;
+					System.out.println("In " + i + " you were " + temp + " years old!");
+				}
+			
 		}
 
-	//private static void yearofBirth()
+	private static void yearofBirth()
 
 		{
 			Scanner input2 = new Scanner(System.in);
@@ -47,6 +52,9 @@ public class divingrightin
 				System.out.println("Oh, so you are an adult now.");
 			}
 			
+			double i = age/7;
+			System.out.println("Your ages transfer to dog years are aproximately " + i +".");
+				
 		}
 
 

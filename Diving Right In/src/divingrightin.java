@@ -56,6 +56,7 @@ public class divingrightin
 			System.out.println("Your ages transfer to dog years are aproximately " + i +".");
 				
 		}
+	//did it at home:)
 
 
 
